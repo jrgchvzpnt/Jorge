@@ -1,6 +1,6 @@
-﻿using Jorge.DataAccess.Data;
-using Jorge.DataAccess.Repository.IRepository;
-using Jorge.Models;
+﻿using JorgeBook.DataAccess.Data;
+using JorgeBook.DataAccess.Repository.IRepository;
+using JorgeBook.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JorgeWeb.Controllers

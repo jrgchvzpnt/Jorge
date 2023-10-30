@@ -1,6 +1,6 @@
-﻿using Jorge.DataAccess.Data;
-using Jorge.DataAccess.Repository.IRepository;
-using Jorge.Models;
+﻿using JorgeBook.DataAccess.Data;
+using JorgeBook.DataAccess.Repository.IRepository;
+using JorgeBook.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Jorge.DataAccess.Repository
+namespace JorgeBook.DataAccess.Repository
 {
     public class CategoryRepository : Repository<Category>, ICategoryRepository
     {

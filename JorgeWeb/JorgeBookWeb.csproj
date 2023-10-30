@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -17,9 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Jorge.DataAccess\Jorge.DataAccess.csproj" />
-    <ProjectReference Include="..\Jorge.Models\Jorge.Models.csproj" />
-    <ProjectReference Include="..\Jorge.Utility\Jorge.Utility.csproj" />
+    <ProjectReference Include="..\Jorge.DataAccess\JorgeBook.DataAccess.csproj" />
+    <ProjectReference Include="..\Jorge.Models\JorgeBook.Models.csproj" />
   </ItemGroup>
 
 </Project>

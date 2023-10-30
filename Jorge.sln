@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34004.107
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JorgeWeb", "JorgeWeb\JorgeWeb.csproj", "{AD65D4D2-421E-4A26-8BC0-5D876F8DBA4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JorgeBookWeb", "JorgeWeb\JorgeBookWeb.csproj", "{AD65D4D2-421E-4A26-8BC0-5D876F8DBA4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jorge.DataAccess", "Jorge.DataAccess\Jorge.DataAccess.csproj", "{BF6BF70B-1D53-448D-A005-76BE335E56F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JorgeBook.DataAccess", "Jorge.DataAccess\JorgeBook.DataAccess.csproj", "{BF6BF70B-1D53-448D-A005-76BE335E56F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jorge.Models", "Jorge.Models\Jorge.Models.csproj", "{8B7FCDA4-5AB2-490C-9AEE-BA87812F6EE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JorgeBook.Models", "Jorge.Models\JorgeBook.Models.csproj", "{8B7FCDA4-5AB2-490C-9AEE-BA87812F6EE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jorge.Utility", "Jorge.Utility\Jorge.Utility.csproj", "{329461A6-4938-47FB-991E-8E8DA890D81C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JorgeBook.Utility", "Jorge.Utility\JorgeBook.Utility.csproj", "{329461A6-4938-47FB-991E-8E8DA890D81C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

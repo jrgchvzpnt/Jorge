@@ -1,11 +1,11 @@
-﻿using Jorge.Models;
+﻿using JorgeBook.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Jorge.DataAccess.Repository.IRepository
+namespace JorgeBook.DataAccess.Repository.IRepository
 {
     public interface ICategoryRepository : IRepository<Category>
     {

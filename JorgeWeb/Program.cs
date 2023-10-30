@@ -1,6 +1,6 @@
-using Jorge.DataAccess.Data;
-using Jorge.DataAccess.Repository;
-using Jorge.DataAccess.Repository.IRepository;
+using JorgeBook.DataAccess.Data;
+using JorgeBook.DataAccess.Repository;
+using JorgeBook.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

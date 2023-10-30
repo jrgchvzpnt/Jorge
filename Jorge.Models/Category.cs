@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 
-namespace Jorge.Models
+namespace JorgeBook.Models
 {
     public class Category
     {
