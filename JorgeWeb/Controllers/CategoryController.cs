@@ -1,5 +1,5 @@
-﻿using JorgeWeb.Data;
-using JorgeWeb.Models;
+﻿using Jorge.DataAccess.Data;
+using Jorge.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JorgeWeb.Controllers

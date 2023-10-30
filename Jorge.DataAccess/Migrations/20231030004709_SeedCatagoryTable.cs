@@ -4,7 +4,7 @@
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace JorgeWeb.Migrations
+namespace Jorge.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class SeedCatagoryTable : Migration

@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace JorgeWeb.Migrations
+namespace Jorge.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class AddCategoryTableToDb : Migration

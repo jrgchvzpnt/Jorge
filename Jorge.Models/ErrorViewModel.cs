@@ -1,4 +1,4 @@
-namespace JorgeWeb.Models
+namespace Jorge.Models
 {
     public class ErrorViewModel
     {

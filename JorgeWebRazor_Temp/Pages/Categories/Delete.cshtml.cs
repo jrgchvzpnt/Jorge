@@ -10,7 +10,7 @@ namespace JorgeWebRazor_Temp.Pages.Categories
     {
         private readonly ApplicationDbContext _db;
 
-    
+
         public Category Category { get; set; }
 
         public DeleteModel(ApplicationDbContext db)

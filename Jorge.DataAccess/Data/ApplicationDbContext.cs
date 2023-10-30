@@ -1,7 +1,7 @@
-﻿using JorgeWeb.Models;
+﻿using Jorge.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace JorgeWeb.Data
+namespace Jorge.DataAccess.Data
 {
     public class ApplicationDbContext : DbContext
     {

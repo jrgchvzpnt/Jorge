@@ -1,4 +1,4 @@
-using JorgeWeb.Data;
+using Jorge.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
