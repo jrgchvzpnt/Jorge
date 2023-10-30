@@ -13,7 +13,7 @@ namespace JorgeWeb.Controllers
         }
         public IActionResult Index()
         {
-            List<Category>  objCategoryList = _db.Catagories.ToList();  
+            List<Category>  objCategoryList = _db.Categories.ToList();  
             return View(objCategoryList);
         }
         public IActionResult Create()
@@ -29,7 +29,7 @@ namespace JorgeWeb.Controllers
             }
             if (ModelState.IsValid)
             {
-                _db.Catagories.Add(obj);
+                _db.Categories.Add(obj);
                 _db.SaveChanges();
                 TempData["success"] = "Categoría creada exitosamente";
                 return RedirectToAction("Index");
@@ -44,7 +44,7 @@ namespace JorgeWeb.Controllers
             {
                 return NotFound();
             }
-            Category? categoryFromdb = _db.Catagories.Find(id);
+            Category? categoryFromdb = _db.Categories.Find(id);
             //Category? categoryFromdb1 = _db.Catagories.FirstOrDefault(c => c.Id == id);
             //Category? categoryFromdb2 = _db.Catagories.Where(c => c.Id == id).FirstOrDefault();
 
@@ -59,7 +59,7 @@ namespace JorgeWeb.Controllers
         {
             if (ModelState.IsValid)
             {
-                _db.Catagories.Update(obj);
+                _db.Categories.Update(obj);
                 _db.SaveChanges();
                 TempData["success"] = "Categoría actualizada exitosamente";
                 return RedirectToAction("Index");
@@ -74,7 +74,7 @@ namespace JorgeWeb.Controllers
             {
                 return NotFound();
             }
-            Category? categoryFromdb = _db.Catagories.Find(id);
+            Category? categoryFromdb = _db.Categories.Find(id);
            
 
             if (categoryFromdb == null)
@@ -86,12 +86,12 @@ namespace JorgeWeb.Controllers
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePOST(int? id)
         {
-            Category? obj = _db.Catagories.Find(id);
+            Category? obj = _db.Categories.Find(id);
             if (obj == null)
             {
                 return NotFound();
             }
-            _db.Catagories.Remove(obj);
+            _db.Categories.Remove(obj);
             _db.SaveChanges();
             TempData["success"] = "Categoría eliminada exitosamente";
             return RedirectToAction("Index");
