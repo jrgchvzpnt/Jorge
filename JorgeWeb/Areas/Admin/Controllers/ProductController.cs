@@ -1,7 +1,9 @@
 ﻿using JorgeBook.DataAccess.Data;
 using JorgeBook.DataAccess.Repository.IRepository;
 using JorgeBook.Models;
+using JorgeBook.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace JorgeBookWeb.Areas.Admin.Controllers
 {
@@ -16,25 +18,54 @@ namespace JorgeBookWeb.Areas.Admin.Controllers
         public IActionResult Index()
         {
             List<Product> objProductList = _unitOfWork.Product.GetAll().ToList();
+
+            //Projections in EF Core
+       
             return View(objProductList);
         }
         public IActionResult Create()
         {
-            return View();
+        //    IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+        //    {
+        //        Text = u.Name,
+        //        Value = u.Id.ToString()
+        //    });
+
+            //ViewBag.CategoryList = CategoryList;
+            //ViewData["CategoryList"] = CategoryList;
+            ProductVM productoVM = new()
+            {
+                CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                }),
+                Product = new Product()
+            };
+            return View(productoVM);
         }
         [HttpPost]
-        public IActionResult Create(Product obj)
+        public IActionResult Create(ProductVM productVM)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Product.Add(obj);
+                _unitOfWork.Product.Add(productVM.Product);
                 _unitOfWork.Save();
                 TempData["success"] = "Producto creada exitosamente";
                 return RedirectToAction("Index");
             }
-            return View();
-        }
+            else
+            {
+                productVM.CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                });
 
+                return View(productVM);
+            }
+         
+        }
 
         public IActionResult Edit(int? id)
         {

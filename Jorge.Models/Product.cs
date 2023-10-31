@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace JorgeBook.Models
 {
@@ -44,10 +45,13 @@ namespace JorgeBook.Models
         //remove-migration para quitar la migración si no fue como esperabas
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
+
+        [ValidateNever]
         public Category Category { get; set; }
 
 
         //add-migration addImageUrlToProduct
+        [ValidateNever]
         public string ImageUrl { get; set; }
 
 
