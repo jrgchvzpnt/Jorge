@@ -89,7 +89,7 @@ namespace JorgeBookWeb.Areas.Admin.Controllers
                 {
                     _unitOfWork.Product.Update(productVM.Product);
                 }
-                //_unitOfWork.Product.Add(productVM.Product);
+                
                 _unitOfWork.Save();
                 TempData["success"] = "Producto creada exitosamente";
                 return RedirectToAction("Index");

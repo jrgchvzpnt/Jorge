@@ -11,6 +11,10 @@ namespace JorgeBook.DataAccess.Data
 
         }
 
+        //Para hacer la migracion completa Add-Migration InitialCreate
+
+        // para mandar todo a la base de datos update-database
+
         // consola add-migration AddCategoryTableToDb
         // Agrega la tabla a la base de datos (desde el modelo)
         public DbSet<Category> Categories { get; set; }
