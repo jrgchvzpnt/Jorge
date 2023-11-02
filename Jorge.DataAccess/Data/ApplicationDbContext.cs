@@ -13,6 +13,7 @@ namespace JorgeBook.DataAccess.Data
 
         }
 
+        //registrar las tablas del identity add-migration addIdentityTables
         //Para hacer la migracion completa Add-Migration InitialCreate
 
         // para mandar todo a la base de datos update-database
@@ -22,6 +23,9 @@ namespace JorgeBook.DataAccess.Data
         public DbSet<Category> Categories { get; set; }
 
         public DbSet<Product> Products { get; set; }
+
+        // hacer la migracion y actualizacion add-migration ExtendIdentityUser
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }    
 
         //Consola add-migration SeedCategoryTable
         //agrega datos a la tabla ya creada
